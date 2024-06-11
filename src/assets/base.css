@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: "texgyreadventor";
+  src: local("OpenSans-Bold"), url("../assets/Fonts/texgyreadventor-bold.otf"), format("truetype");
+}
+
+:root {
+  --background-colour-light: #D9D9D9;
+  --background-colour-dark:#000000;
+
+  --text-colour-dark: #000000;
+  --text-colour-light: #FFFFFF;
+
+  --accent-colour: #EA724C;
+
+  --heading-font: texgyreadventor;
+  --text-font:"Hanken Grotesk";
+
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
+
+  --section-gap: 70px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: var(--background-colour-light);
+  line-height: 1.6;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+ 
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-colour-dark);
+}
